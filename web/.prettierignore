@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+out
+build
+dist
+
+# Environment files
+.env.local
+.env*.local
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Logs
+*.log
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# ChromaDB
+.chroma
+
+# Test results
+test-results
+coverage
