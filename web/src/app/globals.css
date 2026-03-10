@@ -3,6 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@import '../../../generated-docs/specs/design-tokens.css';
+
 /* Shadcn UI Theme Configuration */
 @theme inline {
   --color-background: var(--background);
