@@ -3,12 +3,13 @@ import './globals.css';
 import { ToastProvider } from '@/contexts/ToastContext';
 import { ToastContainer } from '@/components/toast/ToastContainer';
 import { SessionProvider } from '@/components/auth/session-provider';
+import { NavBar } from '@/components/layout/NavBar';
 import { auth } from '@/lib/auth/auth';
 
 export const metadata: Metadata = {
-  title: 'Next.js Application Template',
+  title: 'MortgageMax Commission Payments',
   description:
-    'A template for building Next.js applications with external REST APIs',
+    'MortgageMax administrator portal for managing commission payments',
 };
 
 export default async function RootLayout({
@@ -24,6 +25,7 @@ export default async function RootLayout({
         <SessionProvider session={session}>
           <ToastProvider>
             <div className="min-h-screen flex flex-col">
+              <NavBar />
               <main className="flex-1">{children}</main>
             </div>
             <ToastContainer />

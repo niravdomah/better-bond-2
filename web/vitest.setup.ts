@@ -2,6 +2,7 @@
 import '@testing-library/jest-dom/vitest';
 
 // Accessibility testing with axe-core
+import 'vitest-axe/extend-expect';
 import * as matchers from 'vitest-axe/matchers';
 import { expect } from 'vitest';
 

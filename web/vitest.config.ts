@@ -12,7 +12,11 @@ export default defineConfig({
       'src/**/__tests__/**/*.[jt]s?(x)',
       'src/**/?(*.)+(test).[jt]s?(x)',
     ],
-    exclude: ['node_modules/', '**/*.spec.[jt]s'],
+    exclude: [
+      'node_modules/',
+      '**/*.spec.[jt]s',
+      'src/**/__tests__/helpers/**',
+    ],
     coverage: {
       provider: 'v8',
       include: ['src/**/*.{js,jsx,ts,tsx}'],
